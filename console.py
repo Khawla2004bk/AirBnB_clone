@@ -15,9 +15,7 @@ from models.engine.file_storage import FileStorage
 
 
 class HBNBCommand(cmd.Cmd):
-    prompt = ""
-    if sys.stdin.isatty() and sys.stdout.isatty():
-        prompt = "(hbnb) "
+    prompt = "(hbnb)"
 
     def do_EOF(self, line):
         "CTRL+D to exit the program"
